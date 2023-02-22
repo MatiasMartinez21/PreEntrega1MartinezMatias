@@ -1,0 +1,40 @@
+.header{
+    background-color: black;
+  }
+  .headerContainer{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 0;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .headerLogo{
+    max-width: 100px;
+   width: 100px; 
+  }
+  .headerTitulo{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: end;
+    padding-right: 50px;
+    
+  }
+  .navbar{
+    display: flex;
+      align-items: center;  
+    /* justify-content: center; */
+    /* gap: 20px; */
+  
+  }
+  .navbarLink{
+    color: white;
+    text-decoration: none;
+    /* padding-left: 30px; */
+    padding-left: 10px;
+    margin-right: 10px;
+    
+    
+  }
+  
