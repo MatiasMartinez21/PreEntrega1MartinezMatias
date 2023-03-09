@@ -1,17 +1,21 @@
 .header{
     background-color: black;
   }
-  .headerContainer{
+  .headerConteiner{
     max-width: 900px;
     margin: 0 auto;
     padding: 30px 0;
-    justify-content: space-between;
+    /* display: flex; */
+     justify-content: space-between; 
     align-items: center;
     
   }
   .headerLogo{
-    max-width: 100px;
-   width: 100px; 
+    display: flex;
+    max-width: 50px;
+   width: 50px; 
+   padding-bottom: 20px;
+   
   }
   .headerTitulo{
     color: white;
@@ -19,21 +23,24 @@
     font-weight: 700;
     text-align: end;
     padding-right: 50px;
+    margin-bottom: 50px;
     
   }
   .navbar{
-    display: flex;
-      align-items: center;  
-    /* justify-content: center; */
-    /* gap: 20px; */
+     display: flex;
+      align-items: center;   
+     justify-content: center;
+     gap: 20px; 
   
   }
   .navbarLink{
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    font-weight: 700px;
     /* padding-left: 30px; */
-    padding-left: 10px;
-    margin-right: 10px;
+    /* padding-left: 10px;
+    margin-right: 10px; */
     
     
   }

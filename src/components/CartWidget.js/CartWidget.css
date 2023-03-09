@@ -1,12 +1,13 @@
 .cart{
-    
+   /* width: 100px;  */
  display: flex;
  align-items: center;
 justify-content: center;
     
 }
 .foto1{
-    max-width: 900px;
+    max-width: 200px;
+    /* width: 100px; */
   
 
 }
