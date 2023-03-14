@@ -1,0 +1,51 @@
+ [  
+    
+ {
+        "id": 1,
+        "name": "producto 1",
+        "descripcion": "loren ipsum producto 1",
+        "precio": 6500,
+        "img": "https://via.placeholder.com/220",
+        "categoria": "panaderia"
+    },
+    {
+        "id": 2,
+        " name": "producto 2",
+        "descripcion": "loren ipsum producto 1",
+        "precio": 6500,
+        "img": "https://via.placeholder.com/220",
+        "categoria": "panaderia"
+    },
+    {
+        "id": 3,
+        " name": "producto 3",
+        "descripcion": "loren ipsum producto 1",
+        " precio": 6500,
+        "img": "https://via.placeholder.com/220",
+        "categoria": "perfumeria"
+    },
+    {
+        "id": 4,
+        "name": "producto 4",
+        "descripcion": "loren ipsum producto 1",
+        " precio": 6500,
+        "img": "https://via.placeholder.com/220",
+        "categoria": "perfumeria"
+    },
+    {
+        "id": 5,
+        "name": "producto 5",
+        "descripcion": "loren ipsum producto 1",
+        "precio": 6500,
+        "img": "https://via.placeholder.com/220",
+        "categoria": "verduleria"
+    },
+    {
+        "id": 6,
+        "name": "producto 6",
+        "descripcion": "loren ipsum producto 1",
+        "precio": 6500,
+        "img": "https://via.placeholder.com/220",
+        "categoria": "verduleria"
+    }
+]

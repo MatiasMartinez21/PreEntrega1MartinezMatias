@@ -7,8 +7,8 @@ import { Button } from 'react-bootstrap';
 import CartWidget from './components/CartWidget.js/CartWidget';
 import Contador from './components/Contador/Contador';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-
-
+import Contacto from './components/Contacto/Contacto';
+import Nosotros from './components/Nosotros/Nosotros';
 
 
 
@@ -21,39 +21,26 @@ function App() {
     <BrowserRouter>
 
 
-    {/* <div className="App"> */}
+      {/* navegador */}
+      <NavBar />
+      {/* fin navegador componente */}
 
-      
-{/* navegador */}
-      <NavBar/>   
-{/* fin navegador componente */}
+      <Routes>
 
-    <Routes>
+        <Route path="/" element={<ItemListContainer producto="contenedor 1" precio="1600" id={1} />} />
+        <Route path="/nosotros" element={<Nosotros />} />
+        <Route path="/contacto" element={<Contacto />} />
+        {/* <Route path='*' element={ <Error404/>}/> */}
+        <Route path='*' element={<Navigate to="/" />} />
 
-      <Route path="/" element={ <ItemListContainer producto="contenedor 1" precio="1600" id={1} /> } />
-      <Route path="/nosotros" element={ <nosotros/> } />
-      <Route path="/contacto" element={ <contacto/> } />
-      {/* <Route path='*' element={ <Error404/>}/> */}
-      <Route path='*' element={ <Navigate to="/"/>}/>
-
-    </Routes>
+      </Routes>
 
 
 
+      <Contador />
 
 
-     
-
-    
-     <Contador/>
-
-
-
-
-
-      
-
-    {/* </div> */}
+  
     </BrowserRouter>
   );
 }

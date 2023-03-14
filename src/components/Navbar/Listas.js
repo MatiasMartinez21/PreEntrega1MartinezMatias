@@ -1,42 +1,41 @@
- import './Navbar.css'
+import './Navbar.css'
 import logo from './logo.png'
 import CartWidget from '../CartWidget.js/CartWidget'
-import {Link}  from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
-const Navbar =()=>{
+const Navbar = () => {
 
 
 
-    return(
+    return (
         <header className="header">
             <div className="headerConteiner">
 
-                
-               
-                <h1 className="headerTitulo">Mi Carrito</h1>
-                
+
                 <div className='headerLogo'>
-                    <CartWidget ></CartWidget>
+                    <Link to="/" className='navabarLink'> <CartWidget ></CartWidget></Link>
+
                 </div>
+                <h1 className="headerTitulo">Mi Carrito</h1>
 
 
                 <nav className="navbar">
-                {/* <a href="#"className="navbarLink">Productos</a>
+                    {/* <a href="#"className="navbarLink">Productos</a>
                 <a href="#"className="navbarLink">Catalogo</a>
                 <a href="#"className="navbarLink">Carrito</a>
                 <a href="#"className="navbarLink">Contactos</a> */}
 
 
-                <Link to="/"className="navbarLink">Productos</Link>
-                <Link to="/nosotros"className="navbarLink">Catalogo</Link>
-                <Link to="/contacto"className="navbarLink">Carrito</Link >
-                <Link to=""className="navbarLink">Contactos</Link>
+                    <Link to="/" className="navbarLink">Inicio</Link>
+                    <Link to="/micarrito" className="navbarLink">Ver Carrito</Link >
+                    <Link to="/nosotros" className="navbarLink">Nosotros</Link>
+                    <Link to="/contacto" className="navbarLink">Contactos</Link>
 
 
 
                 </nav>
             </div>
-           
+
             <hr></hr>
 
         </header>
