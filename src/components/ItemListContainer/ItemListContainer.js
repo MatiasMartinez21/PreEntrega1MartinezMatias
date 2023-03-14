@@ -98,14 +98,14 @@ console.log(productos)
 
             pedirDatos()
             .then((response)=>{
-         setProductos(response)
-})
+                setProductos(response)
+                })
             .catch((error)=>{
-             console.log(error)
-})
+                console.log(error)
+                })
 //                 .fanally(()=>{
-//             console.log("fin de proceso")
-// })
+// //             console.log("fin de proceso")
+//                  })
 },[])
    
 
@@ -114,12 +114,26 @@ console.log(productos)
     return(
             <div className="contenedorListas">
                 <h2>Contenedor de listas</h2>
-                <p>producto:{producto}</p>
+                 {/* <p>producto:{producto}</p>
                 <p>precio:{precio}</p>
-                <p>id:{id}</p>
+                <p>id:{id}</p>  */}
+
 
                 <hr/>
+                <div className='row my-5 '>
+                    {productos.map((el)=>(
 
+                    <div key={el.id} className='col-3 m-1'>
+                        <img src={el.img} alt={el.name}/> 
+                        <h4>{el.name}</h4>
+                        <p>{el.descripcion}</p>
+                        <p>precio: <strong>${el.precio}</strong> </p>
+                        
+
+
+                    </div>)
+                    )}
+                </div>
 
 
                 {/*mostrar el array de producto */}

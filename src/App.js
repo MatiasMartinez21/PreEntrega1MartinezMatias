@@ -40,12 +40,7 @@ function App() {
 
 
 
-{/* contenedor de listas */}
-    {/* <ItemListContainer/> */}
-    {/* fin contenedor */}
 
-
-      {/* <CartWidget></CartWidget>  */}
 
      
 
